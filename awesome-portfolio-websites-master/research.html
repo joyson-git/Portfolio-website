@@ -35,6 +35,76 @@
 
 <!--Import animation.css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<style>
+    /* Include the updated CSS here */
+    
+    .researchMainWrapper {
+        font-family: Arial, sans-serif;
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .researchDetails {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .skills-card {
+        flex: 1 1 calc(50% - 20px);
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    .skills-card h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .skill-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .skill-icon {
+        margin-right: 10px;
+    }
+    
+    .skill-name {
+        font-weight: 100px;
+        font-size: 1.1em;
+    }
+    /* Ensure the last item in the list doesn't have a border */
+    
+    .skill-item:last-child {
+        border-bottom: none;
+    }
+</style>
+
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="assets/css/preloader.css">
 <link rel="stylesheet" type="text/css" href="assets/css/research.css" />
@@ -79,17 +149,18 @@
         <section class="txt-bottom">
             <div class="px-3 pt-5">
                 <div class="row">
-                    <div class="col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
+                    <div class="col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate_animated animatezoomIn animate_delay-1s">
                         <h2 class="main-heading mb-0 head-upper research_head">Technical <span class="research_work">Skills</span></h2>
-                        <p class="pre-heading p-upper font-weight-bolder" class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s">
-                            My area of interests are AI, Blockchain, Machine Learning and Computer Vision.
+                        <p class="pre-heading p-upper font-weight-bolder" class="mb-0 mt-3 text-center animate_animated animatezoomIn animate_delay-2s">
+                            I am focused on developing web applications while also strengthening my skills in data structures and algorithms, alongside Java full-stack development
+
                         </p>
                     </div>
 
                     <div class="col-md-6" style="margin-top: 45px;">
                         <svg xmlns="http://www.w3.org/2000/svg" id="verapc" width="100%" baseProfile="tiny" class="svgmate" version="1" viewBox="800 300 1220 1080">
                 <g id="_L3_x5F_Frame-Plant-STable">
-                  <g id="_x3C_Group_x5F_FRAME_x3E_" class="framedropin"
+                  <g id="x3C_Group_x5F_FRAME_x3E" class="framedropin"
                     style="animation-name:veradropin;animation-iteration-count:1;animation-duration:.9s;animation-timing-function:ease-in-out">
                   </g>
                 </g>
@@ -118,39 +189,39 @@
 
 
                   <g id="L5_x5F_Human_x5F_Woman">
-                    <path id="_x3C_Path_x5F_WArm_x5F_back_x3E_" fill="#F68E5A" d="M1532 830s-10-81-32-113l-28 29 38 84h22z">
+                    <path id="x3C_Path_x5F_WArm_x5F_back_x3E" fill="#F68E5A" d="M1532 830s-10-81-32-113l-28 29 38 84h22z">
                     </path>
-                    <g id="_x3C_Group_x5F_WShirt_x3E_">
-                      <path id="_x3C_Path_x5F_Shirt_x5F_middle_x3E__1_" fill="#355469"
+                    <g id="x3C_Group_x5F_WShirt_x3E">
+                      <path id="x3C_Path_x5F_Shirt_x5F_middle_x3E1" fill="#355469"
                         d="M1228 694s38-53 137-61c0 0 66-4 105 29l48 43s4 5-2 13c-3 4-8 3-10 6-6 6-3 9-10 16-4 3-8 1-12 10l-30 57c-9 17-17 25-38 26s-61 12-79 18c-21 6-91-7-95-45l-14-112z">
                       </path>
-                      <path id="_x3C_Path_x5F_Shirt_x5F_top_x3E_" fill="#17354C"
+                      <path id="x3C_Path_x5F_Shirt_x5F_top_x3E" fill="#17354C"
                         d="M1234 739l-6-45s38-53 137-61c0 0 66-4 105 29l40 35s-1 7-10 8-14-6-18-2c-5 4 9 15 0 22s-19-7-28-2 0 12-10 19c-8 6-27-14-35-9s-2 22-12 25c-7 3-25-17-32-15s-1 27-12 28-12-22-25-22-12 21-23 18c-10-4-2-30-13-34-8-3-15 18-23 17s-1-22-9-24-26 13-26 13z">
                       </path>
-                      <path id="_x3C_Group_x5F_Shirt_x5F_bottom_x3E_" fill="#2A475D"
+                      <path id="x3C_Group_x5F_Shirt_x5F_bottom_x3E" fill="#2A475D"
                         d="M1489 833l-30-36-5 9c-9 18-17 26-38 27s-61 12-79 18c-10 3-31 1-51-5l-1 50c71-38 143-55 203-63h1z">
                       </path>
                     </g>
-                    <g id="_x3C_Group_x5F_Face_x5F_Woman_x3E_">
-                      <path id="_x3C_Path_x5F_WNeck_x3E_" fill="#F68E5A"
+                    <g id="x3C_Group_x5F_Face_x5F_Woman_x3E">
+                      <path id="x3C_Path_x5F_WNeck_x3E" fill="#F68E5A"
                         d="M1327 630s-5 6-1 13c4 8 31 55 32 59 1 3 6 13 10 4s11-58 11-58-18 15-52-18z"></path>
-                      <path id="_x3C_Path_x5F_WFace_x5F_Shape_x3E_" fill="#F89F71"
+                      <path id="x3C_Path_x5F_WFace_x5F_Shape_x3E" fill="#F89F71"
                         d="M1313 606s18 47 54 47c26 0 38-32 38-50v-37h-92v40z"></path>
-                      <path id="_x3C_Path_x5F_WHair_x3E_" fill="#585268"
+                      <path id="x3C_Path_x5F_WHair_x3E" fill="#585268"
                         d="M1356 511c-17-1-32 8-44 23-8 10-26 4-25 38 1 10 4 6 4 15-1 9-7 12-7 21s5 40 28 35c20-5 16-17 16-21s-1-6-6-10-5-8-3-10 5-1 7 1 4 4 5-3-4-19 4-16 17 11 40 10 29-13 30-16v27l-2 15s9-1 22-19c7-9 3-17 1-23 0 0-15-25-15-32s-15-31-55-35z">
                       </path>
-                      <g id="_x3C_Group_x5F_WEyes_x3E_" fill="#2C5169">
+                      <g id="x3C_Group_x5F_WEyes_x3E" fill="#2C5169">
                         <path d="M1390 610h7c3 0 4-2 2-3-4-3-9 3-9 3zM1356 612h9c3 0 4-2 3-3-5-3-12 3-12 3z"></path>
                       </g>
-                      <path id="_x3C_Path_x5F_WNose_x3E_" fill="#F68D59" d="M1383 609c0 2 3 21-4 21s-6-9-3-15 6-13 7-6z">
+                      <path id="x3C_Path_x5F_WNose_x3E" fill="#F68D59" d="M1383 609c0 2 3 21-4 21s-6-9-3-15 6-13 7-6z">
                       </path>
-                      <path id="_x3C_Path_x5F_WMouth_x3E_" fill="#F5845F" d="M1373 643c4 0 7-2 8-3s-3-2-8-2-10-1-7 2c2 2 5 3 7 3z">
+                      <path id="x3C_Path_x5F_WMouth_x3E" fill="#F5845F" d="M1373 643c4 0 7-2 8-3s-3-2-8-2-10-1-7 2c2 2 5 3 7 3z">
                       </path>
                     </g>
 
                     <g class="specrotate"
                       style="animation-name:armright;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-duration:7.5s;animation-delay:2s;transform-origin:1519px 874.7px">
-                      <g id="_x3C_Group_x5F_WGlasses_x3E_">
+                      <g id="x3C_Group_x5F_WGlasses_x3E">
                         <path fill="#F9B4A7"
                           d="M1346 726h-1c0-1-19-39-23-44l-2-2c-3 0-6 2-8 3h-1v-1c1-1 5-4 9-4l4 3 23 44a1 1 0 0 1-1 1zM1398 702h-1a1362 1362 0 0 0-26-48c-3 0-6 2-7 3h-2v-1c1-1 5-4 9-4l4 3a1300 1300 0 0 1 23 47z">
                         </path>
@@ -159,7 +230,7 @@
                         </path>
                         <path fill="#F9B4A7" d="M1368 719l-2-1c4-5 9-6 13-6v2c-3 0-8 1-11 5z"></path>
                       </g>
-                      <path id="_x3C_Path_x5F_WArm_x3E__1_" fill="#F89F71"
+                      <path id="x3C_Path_x5F_WArm_x3E1" fill="#F89F71"
                         d="M1393 649c-8 1-18 1-24 10s-10 21-5 22c7 1 5-7 8-9 3-3 15-10 11-2-2 4-2 7-2 9s3 3 5-2c3-6 9-6 13-6s8 0 11 10 19 83 33 116c25 59 52 73 62 77 19 6 25-8 25-8s12-35-19-79c-24-34-40-68-58-89s-23-29-27-34-13-16-33-15z">
                       </path>
                     </g>
@@ -178,20 +249,20 @@
                     <path fill="#FFF5F3" d="M1156 624l-4 8c-1 1-3 4 2 12s15 28 21 55c0-9 0-20 3-21s7 6 8 16c2-1 2-9-6-26l-24-44z">
                     </path>
 
-                    <g id="_x3C_Group_x5F_Mouse_x3E_" class="arm">
+                    <g id="x3C_Group_x5F_Mouse_x3E" class="arm">
                       <path fill="#d3b4f8" d="M1363 1051c-6 6-17 11-36 10s-54 1-46-17 16-18 59-15c13 0 41 4 23 22z">
                       </path>
                       <path fill="#F3726C" d="M1353 1037c-11-7-24-5-14 0s24 6 14 0z"></path>
                     </g>
-                    <g id="_x3C_Group_x5F_ManSleeve_x3E_" class="sleave"
+                    <g id="x3C_Group_x5F_ManSleeve_x3E" class="sleave"
                       style="animation-name:sleave;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-duration:5s;transform-origin:1009.149px 711.625px">
-                      <path id="_x3C_Path_x5F_WhiteSleeve_x3E_" fill="#bb86fc"
+                      <path id="x3C_Path_x5F_WhiteSleeve_x3E" fill="#bb86fc"
                         d="M1084 712c-9-22-26-58-65-58s-97 56-97 183 1 211 45 213c7 0 14-9 26-17 25-19 60-40 64-47 6-10 7-36 6-56s6-107 18-136 13-60 3-82z">
                       </path>
-                      <path id="_x3C_Path_x5F_WhiteSleeve_x5F_Shadow_x3E_" fill="#bb86fc"
+                      <path id="x3C_Path_x5F_WhiteSleeve_x5F_Shadow_x3E" fill="#bb86fc"
                         d="M994 1023s-21 18-31 18-13-10-13-17c2-20 46-76 113-78 0 0-36 49-69 77z"></path>
                     </g>
-                    <g id="_x3C_Group_x5F_ManArm_x3E_" class="arm">
+                    <g id="x3C_Group_x5F_ManArm_x3E" class="arm">
                       <path fill="#F89F71"
                         d="M1347 1034l-15-20c-3-5-8-10-25-6s-37 10-51 5-172-62-186-64-30-4-62 13-54 36-40 47 41 23 97 26 155 12 175 13 22-3 30-2l11 2c5 0 17-14 25-14s14 6 18 9 8 3 4-2-10-11 3-1c2 2 5 4 11 3s18 1 5-9z">
                       </path>
@@ -201,33 +272,33 @@
                     </g>
                     <g class="armright"
                       style="animation-name:armright;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-duration:10s;transform-origin:1243px 961.5px">
-                      <path id="_x3C_Path_x5F_ArmRight_x3E_" fill="#F89F71"
+                      <path id="x3C_Path_x5F_ArmRight_x3E" fill="#F89F71"
                         d="M1267 686c-5 22-106 264-24 276 54 7 58-146 53-260-1-15-1-18 4-29s11-26 4-38-11-17-16-21-7-7-13 10c-2-5-8-14-15-17-5-3-4 4-1 7s5 12 5 24 0 25 3 30 2 8 0 18z">
                       </path>
-                      <path id="_x3C_Path_x5F_HandShadow_x3E_" fill="#F68F5B"
+                      <path id="x3C_Path_x5F_HandShadow_x3E" fill="#F68F5B"
                         d="M1303 660s-4 5-11 5-20-6-21-21c0-6 2-11 3-10s5 16 9 19 6 0 9 3 4 5 11 4z"></path>
-                      <g id="_x3C_Group_x5F_Pencil_x5F_Front_x3E_">
+                      <g id="x3C_Group_x5F_Pencil_x5F_Front_x3E">
                         <path fill="#F9B4A7" d="M1344 683c-5-12-28-25-37-32l-2 8c6 4 29 23 39 24z"></path>
                         <path fill="#FEEEE8" d="M1344 683l-9-11-5 5c5 3 10 6 14 6z"></path>
                         <path fill="#F26D57" d="M1344 683l-3-4-2 3 5 1z"></path>
                       </g>
-                      <g id="_x3C_Group_x5F_Pencil_x5F_Back_x3E_">
+                      <g id="x3C_Group_x5F_Pencil_x5F_Back_x3E">
                         <path fill="#F26D57" d="M1246 610c1-2 2-1 3-1l-7-5h-4c-2 1-1 4 0 5l7 4 1-3z"></path>
                         <path fill="#F9B4A7" d="M1274 627l-24-18s-3-1-4 1v4l27 19 1-6z"></path>
                       </g>
                     </g>
-                    <g id="_x3C_Group_x5F_Man_x5F_Face_x3E_" class="manhead"
+                    <g id="x3C_Group_x5F_Man_x5F_Face_x3E" class="manhead"
                       style="animation-name:head;animation-timing-function:ease-in-out;transform-origin:1117.293px 580.5px;animation-iteration-count:infinite;animation-duration:5s">
                       <path fill="#F89F71" d="M1212 508c14 8 27 26 8 72s-45 63-77 28-33-55-8-89c24-34 47-29 77-11z">
                       </path>
-                      <path id="_x3C_Path_x5F_Snor_x3E_" fill="#585268"
+                      <path id="x3C_Path_x5F_Snor_x3E" fill="#585268"
                         d="M1215 603c2-2 3-7-2-10s-8 1-11 4-7 4-10 4-8 3-1 4 20 4 24-2z"></path>
                       <path fill="#585268"
                         d="M1175 557c0-12 10-16 5-23s-9-14-12-16-6-10 6-10 36 14 47 11 20-10 3-20-52-35-91-24c-12 4-16 12-17 15s-11 0-15 9-15 51-4 76c4 11 6 18 22 17 11-2 12 5 29-14 6-6 7-11 10-17 2-5 17-4 17-4z">
                       </path>
-                      <path id="_x3C_Path_x5F_Nose_x3E_" fill="#F68E5A" d="M1219 569s-11 10-11 18 9 8 11 1 2-14 0-19z">
+                      <path id="x3C_Path_x5F_Nose_x3E" fill="#F68E5A" d="M1219 569s-11 10-11 18 9 8 11 1 2-14 0-19z">
                       </path>
-                      <g id="_x3C_Group_x5F_Glasses_x3E_">
+                      <g id="x3C_Group_x5F_Glasses_x3E">
                         <path fill="#F26A56"
                           d="M1209 551c-7 0-14 10-14 18s5 11 8 11 14-3 14-18c0-4-1-11-8-11zm-5 25c-3 0-5-1-5-7 0-9 6-14 10-14 2 0 5 0 5 7 0 8-7 14-10 14z">
                         </path>
@@ -238,7 +309,7 @@
                           d="M1156 561l3-5c2-3 6-1 8-1l30 9v4l-28-9c-2-1-6-2-8 0l-3 4c-1 2-3 0-2-2zM1216 568h5l-1 3h-5z">
                         </path>
                       </g>
-                      <path id="_x3C_Path_x5F_Beard-TOP_x3E_" fill="#585268"
+                      <path id="x3C_Path_x5F_Beard-TOP_x3E" fill="#585268"
                         d="M1166 602c-4 0-9 0-12 5s-6 11 5 16 13 9 17 15 13 13 22-2 10-24 8-27c0 0-4 4-12 5-9 1-20-11-28-12z">
                       </path>
                     </g>
@@ -260,7 +331,7 @@
                     <path fill="#d3baf3"
                       d="M1621 430l7 3c33 12 55 26 53 31 0 0 10-33 11-48s4-25-12-72c-4-9 1-32 8-45 4-7 0-14-7-17-9-4-16 0-20 10l-4 13s4 24 2 32c-4 14-28 10-36 56-3 14-2 37-2 37z">
                     </path>
-                    <g id="_x3C_Group_x5F_SCREEN_x3E_">
+                    <g id="x3C_Group_x5F_SCREEN_x3E">
                       <path fill="#FFF"
                         d="M1715 939c-5-5-41-60-47-70s-3-18-2-25l36-253c2-10 3-10 12-12 24-1 67 3 67 3 5 2 10 4 10 13-2 37-7 112-14 162a1897 1897 0 0 1-34 165c-6 22-8 24-15 26-4 2-10-5-13-9z">
                       </path>
@@ -301,7 +372,7 @@
                     </path>
                     <ellipse cx="1308" cy="877" fill="#bb86fc" rx="27" ry="10"></ellipse>
                     <path fill="#2A475D" d="M1330 883c-5 2-13 4-22 4-8 0-15-1-20-3-4-2 5-6 20-6s25 3 22 5z"></path>
-                    <g id="_x3C_Group_x5F_Cup_x5F_Steam_x3E_">
+                    <g id="x3C_Group_x5F_Cup_x5F_Steam_x3E">
                       <path fill="#FFF5F3" d="M1308 862c2 0 9-5 9-16s-1-19-6-26-8-21-9-9c0 8 3 10 3 16-1 5-6 16-6 22s3 13 9 13z"
                         class="steam ste1" style="animation-duration:4s"></path>
                       <path fill="#FFF5F3" d="M1326 851c1 3-2 12-5 8-2-2 2-5 1-8-2-7 0-13 4 0z" class="steam ste2"
@@ -312,11 +383,11 @@
                     style="animation-name:veraslidein;animation-iteration-count:1;animation-duration:1.3s;animation-timing-function:ease-in-out;transform:translateX(45px)">
                     <path fill="#FFF" d="M1657 1080s-6-53-4-72h120c0 38-4 72-4 72h-112z"></path>
                     <ellipse cx="1713" cy="1008" fill="#d3b4f8" rx="60" ry="22"></ellipse>
-                    <g id="_x3C_Group_x5F_PencilPink_x3E_">
+                    <g id="x3C_Group_x5F_PencilPink_x3E">
                       <path fill="#F8AFA3" d="M1671 932s-6-1-8 3l-4-13c2-4 8-3 8-3l4 13"></path>
                       <path fill="#FDDFDB" d="M1702 1029l-31-97s-6-1-8 3l30 93 9 1z"></path>
                     </g>
-                    <g id="_x3C_Group_x5F_PencilBlue_x3E_">
+                    <g id="x3C_Group_x5F_PencilBlue_x3E">
                       <g fill="#17354C">
                         <path d="M1696 930v-1M1683 916c5-6 9 0 9 0l4 13c-1 0-6-2-10 1l-3-14z"></path>
                       </g>
@@ -332,12 +403,12 @@
 
         <div class="researchMainWrapper">
             <div class="container">
-                <div class="researchDetails">
-                    <table id="researchDetailsTable">
-                        <tbody class="main">
-                            <!--Fetch data from research.js-->
-                        </tbody>
-                    </table>
+                <div class="researchDetails main">
+
+
+                    <!--Fetch data from research.js-->
+
+
                 </div>
             </div>
         </div>
